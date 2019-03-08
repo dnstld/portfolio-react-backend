@@ -2,7 +2,7 @@ const Portfolio = require('../models/Portfolio')
 
 module.exports = {
   async index(req, res) {
-    const portfolios = await Portfolio.find({})
+    const portfolios = await Portfolio.find({}).sort('-createdAt')
 
     return res.json(portfolios)
   },
