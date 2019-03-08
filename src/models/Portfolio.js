@@ -4,7 +4,7 @@ const PortfolioSchema = new mongoose.Schema({
   client: String,
   title: String,
   date: String,
-  tools: String,
+  tools: [String],
   category: String,
   description: String,
   imageUrl: String,
